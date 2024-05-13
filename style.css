@@ -13,7 +13,7 @@ STYLE RESET
     --text: #ffffff;
     --dark-text: #ababab;
     --accent: #366E67;
-    --shader: #1c1c1c;
+    --shader: #1f1f1f;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -68,7 +68,7 @@ nav{
     top: 0;
     padding: 1% 0%;
     border-bottom: 2px solid var(--text);
-    background-color: var(--background);
+    background-color: var(--shader);
 }
 
 .fixed-nav{
@@ -96,22 +96,15 @@ nav a:hover{
     gap: 2rem;
 }
 
-.btn{
-    background-color: var(--accent);
-    color: var(--text);
-    font-size: 1.2rem;
-    border: 2px solid var(--text);
-}
-
-.btn:hover{
-    background-color: var(--text);
-    color: var(--background);
-}
-
 .dropdown-menu{
     background-color: var(--background);
     border: 2px solid var(--text);
+    color: var(--text);
     font-size: 1.2rem;
+}
+
+.dropdown-menu a{
+    color: var(--text);
 }
 
 .dropdown-menu a:hover{
@@ -229,7 +222,6 @@ nav a:hover{
         }
     
         .big_nav a{
-        color: var(--text);
         text-decoration: none;
         transition: 0.3s ease-out;
     }
@@ -281,6 +273,22 @@ footer{
     .black-section h2,
     .black-section p{
     font-weight: 700;
+    color: var(--text);
+}
+
+.btn{
+    background-color: var(--text);
+    color: var(--background);
+    font-size: 1.2rem;
+}
+
+.btn i{
+    color: var(--background);
+}
+
+.btn:hover,
+.btn:hover i{
+    background-color: var(--accent);
     color: var(--text);
 }
 
@@ -428,6 +436,16 @@ footer{
     padding-left: 2rem;
 }
 
+.learning-content p{
+    margin-top: 2rem;
+    color: var(--dark-text);
+}
+
+.learning-content img{
+    border-radius: 0.4rem;
+    margin: 2rem 0;
+}
+
 .learning-hud{
     display: grid;
     gap: 2rem;
@@ -439,6 +457,8 @@ footer{
 
 .menu h2{
     margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
 }
 
 .menu ul{
