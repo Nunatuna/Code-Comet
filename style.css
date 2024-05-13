@@ -1,0 +1,544 @@
+/*********************************************
+STYLE RESET
+*********************************************/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+}
+
+:root{
+    --background: #252525;
+    --text: #ffffff;
+    --dark-text: #ababab;
+    --accent: #366E67;
+    --shader: #1c1c1c;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--text);
+    background: var(--accent);
+}
+
+::selection {
+    color: var(--text);
+    background: var(--accent);
+}
+
+/*  Scrollbar style */
+/*  Width   */
+::-webkit-scrollbar {width: 0.6rem;}
+
+/*  Track   */
+::-webkit-scrollbar-track {background: var(--shader);}
+   
+/*  Handle  */
+::-webkit-scrollbar-thumb {background: var(--text);}
+  
+/*  Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: var(--accent);}
+
+body{
+    background-color: var(--background);
+    /* padding: 0% 8%; */
+    color: var(--text);
+}
+
+h1,h2,h3{
+    margin: 0 0 0.8rem 0;
+    padding: 0;
+}
+
+h1{font-size: 4rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1rem;}
+
+p{
+    margin: 0 0 0.3rem 0;
+    padding: 0;
+}
+
+
+/*********************************************
+                NAVBAR
+*********************************************/
+nav{
+    position: sticky;
+    top: 0;
+    padding: 1% 0%;
+    border-bottom: 2px solid var(--text);
+    background-color: var(--background);
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a:hover{
+    color: var(--accent);
+}
+
+.big_nav {
+    display: none;
+}
+
+.icon{
+    height: 100%;
+}
+
+.profile{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn{
+    background-color: var(--accent);
+    color: var(--text);
+    font-size: 1.2rem;
+    border: 2px solid var(--text);
+}
+
+.btn:hover{
+    background-color: var(--text);
+    color: var(--background);
+}
+
+.dropdown-menu{
+    background-color: var(--background);
+    border: 2px solid var(--text);
+    font-size: 1.2rem;
+}
+
+.dropdown-menu a:hover{
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+/* Little burger menu nav for when screen is smaller than 520px */
+.lil_nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    gap: 2rem;
+    height: 4rem;
+    color: var(--heading);
+    background-color: var(--background);
+    font-size: 1.2rem;
+    padding: 2% 8%;
+    border-bottom: 2px solid var(--text);
+}
+
+.lil_nav a{
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lil_nav a:hover{
+    color: var(--accent);
+}
+
+.lil_nav span{
+    color: var(--text);
+    transition: 0.3s;
+    margin-left: auto;
+}
+
+.lil_nav span:hover{
+    color: var(--accent);
+} 
+
+/* Overlay for the nav */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 1%;
+    right: 8%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/*      Breakpoints for when screen gets bigger         */
+@media screen and (min-width: 900px){
+    .lil_nav{
+        display: none;
+    }
+    
+    header img{
+        border-radius: 0.4rem;
+        }
+    
+        header img a{
+        padding: 0;
+        align-items: center;
+    }
+    
+    .active{
+        text-decoration: underline;
+    }
+    
+    /* Nav bar for when screen is larger than 520px */
+    .big_nav {
+        display: flex;
+        align-items: center;
+        margin: 0% 8%;
+        gap: 2rem;
+        height: 3rem;
+        color: var(--heading);
+        font-size: 1.2rem;
+        }
+
+        .big_nav img{
+        height: 100%;
+        border-radius: 100%;
+        transition: 0.3s ease-out;
+        }
+
+        .big_nav img:hover{
+        transform:rotateZ(40deg);
+        filter: drop-shadow(0 0 0.5rem var(--accent));
+        }
+    
+        .big_nav a{
+        color: var(--text);
+        text-decoration: none;
+        transition: 0.3s ease-out;
+    }
+}
+
+
+/*********************************************
+                FOOTER
+*********************************************/
+footer{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--shader);
+    padding: 2em;
+    margin-top: 2em;
+    z-index: 2;
+}
+
+
+/*********************************************
+                UTILITY
+*********************************************/
+
+.white-section{
+    background-color: var(--text);
+    padding: 8%;
+    }
+
+    .white-section h1,
+    .white-section h2,
+    .white-section p,
+    .white-section i{
+    color: var(--background);
+    padding: 0;
+}
+
+.black-section{
+    padding: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--text);
+    }
+
+    .black-section h1,
+    .black-section h2,
+    .black-section p{
+    font-weight: 700;
+    color: var(--text);
+}
+
+.cards{
+    display: flex;
+    gap: 1em;
+}
+
+.black-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+    .black-card img{
+    width: 100%;
+}
+
+.white-card{
+    display: flex;
+}
+
+.divider{
+    padding: 0;
+    margin: 2rem 0;
+    border: 1px solid var(--dark-text);
+}
+
+
+
+.welcome{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1% 8%;
+    }
+
+    .take-off h1{
+        font-size: 5rem;
+        padding: 0;
+        margin: 0;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    }
+
+    .login-box{
+    width: 25rem;
+    padding: 1em;
+    background-color: var(--accent);
+    border-radius: 0.375rem;
+    }
+
+    .box-top{
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid var(--text);
+        margin-bottom: 1em;
+    }
+
+    .close{
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .details input{
+        width: 100%;
+        border-radius: 0.375rem;
+    }
+
+    .details p{
+        margin-bottom: 0.2em;
+    }
+
+
+/*********************************************
+                COURSES
+*********************************************/
+
+.courses{
+    margin-top: 4rem;
+    padding: 1% 8%;
+}
+
+.html{grid-area: html;}
+.css{grid-area: css;}
+.java{grid-area: java;}
+.basics{grid-area: basics;}
+
+.course-select{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'html html html css css css'
+    'basics basics java java java java';
+    gap: 2rem;
+}
+
+.course-header{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.course-header i{
+    margin-left: auto;
+    font-size: 2rem;
+}
+
+.course-card{
+    border: 2px solid var(--text);
+    border-radius: 0.3rem;
+    padding: 2rem;
+}
+
+.course-card p{
+    color: var(--dark-text);
+}
+
+.start{
+    margin-top: 1rem;
+}
+
+.learning-menu{
+    position: fixed;
+    width: 20%;
+    height: 75vh;
+    overflow: hidden scroll;
+    padding-right: 2%;
+}
+
+.learning-content{
+    grid-area: content;
+    padding-left: 2rem;
+}
+
+.learning-hud{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'menu content content content'
+    'menu content content content';
+}
+
+.menu h2{
+    margin-top: 2rem;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--dark-text);
+    transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    color: var(--accent);
+}
+
+#active{
+    color: var(--text);
+    text-decoration: underline;
+}
+
+#active:hover{
+    color: var(--accent);
+}
+
+pre{
+    border: 1px solid var(--dark-text);
+    padding: 2rem;
+    border-radius: 0.4rem;
+}
+
+code{
+    color: var(--accent);
+}
+
+/*********************************************
+                QUERIES
+*********************************************/
+@media (max-width: 1200px) {
+    .course-select{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        'html   css ' 
+        'basics java';
+    }
+}
+
+@media (max-width: 1000px) {
+    .course-select{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'html' 
+        'css'
+        'basics'
+        'java';
+    }
+}
+
+@media (max-width: 900px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 738px) {
+    .welcome{
+        height: 80vh;
+    }
+
+    .welcome h1,
+    h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 570px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    .course-card p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 443px) {
+    .welcome h1,
+    h1{
+        font-size: 2rem;
+    }
+}
