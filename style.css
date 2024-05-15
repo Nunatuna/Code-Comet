@@ -425,8 +425,9 @@ footer{
 
 .learning-menu{
     position: fixed;
-    width: 20%;
+    width: 20%; 
     height: 75vh;
+    padding-bottom: 5rem;
     overflow: hidden scroll;
     padding-right: 2%;
 }
