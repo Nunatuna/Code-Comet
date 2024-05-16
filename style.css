@@ -297,6 +297,13 @@ footer{
     color: var(--text);
 }
 
+.code{
+    background-color: var(--dark-text);
+    color: var(--background);
+    border-radius: 0.4rem;
+    padding: 0.1rem;
+}
+
 .cards{
     display: flex;
     gap: 1em;
@@ -492,14 +499,13 @@ footer{
     color: var(--accent);
 }
 
-pre{
-    border: 1px solid var(--dark-text);
-    padding: 2rem;
-    border-radius: 0.4rem;
+ol > li{
+    margin-top: 1rem;
 }
 
-code{
-    color: var(--accent);
+.vscode li:before{
+    content: url(../codecomet/img/vscode.png);
+    display: inline-block;
 }
 
 /*********************************************
