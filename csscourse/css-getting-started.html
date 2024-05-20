@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Comet</title>
+    <link rel="icon" href="../img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/1cc8df4c3e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="fixed-nav">
+        <div class="big_nav">
+            <a class="icon" href="../index.html">
+                <img class="icon-default" src="../img/icon-default.png" alt="">
+                <img class="icon-hover" src="../img/icon-hover.png" alt="">
+            </a>
+            <div class="btn-group">
+              <a href="../courses.html" type="button" class="btn">Courses</a>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../htmlcourse/htmlcourse.html">HTML</a></li>
+                <li><a class="dropdown-item" href="csscourse.html">CSS</a></li>
+                <li><a class="dropdown-item" href="../javacourse.html">Javascript</a></li>
+              </ul>
+            </div>
+            <a class="btn" href="../resoucres.html">Resources</a>
+            <a class="btn" href="../blog.html">Blog</a>
+            <div class="profile">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href="../login.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        <div class="lil_nav">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a><!-- Button to close the overlay navigation -->
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                  <a href="../courses.html">Courses</a>
+                  <!-- <a href="#projects">Projects</a> -->
+                  <a href="../resoucres.html">Resources</a>
+                  <a href="../blog.html">Blog</a>
+                  <a href="../login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <a class="icon" href="../index.html"><img class="icon" src="../img/planet_icon.png" alt=""></a>
+            <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <section class="black-section">
+        <div class="learning-hud">
+            <div class="learning-menu">
+                <div class="course-header">
+                    <h2>CSS</h2>
+                    <i class="fa-brands fa-css3"></i>
+                </div>
+                <div class="menu">
+                    <h2>Intro</h2>
+                    <ul>
+                        <li><a href="csscourse.html">What is CSS?</a></li>
+                        <li><a id="active" href="getting-started.html">Getting started</a></li>
+                    </ul>
+                    <h2>Fundamentals</h2>
+                    <ul>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                    </ul>
+                    <h2>Basics</h2>
+                    <ul>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                    </ul>
+                    <h2>Basics</h2>
+                    <ul>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                        <li><a href="">What is HTML?</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="learning-content">
+                <h1>Getting started</h1>
+                <p>CSS documents have a very simple structure and consists of just 3 parts: Selector, Property and Value. <br>Let's get into them one by one.</p>
+                <div class="divider"></div>
+                <h2>CSS Selector</h2>
+                <p>CSS selectors will point to an element inside the HTML document it's linked to to change it's style and apprearance.</p>
+                <p>Not all selectors are created equally and there is therefore a hierarchy, here's how they line up starting from priority one and downwards:</p>
+                <ol>
+                    <li>ID selectors: ID selectors is definied by you and has the highest priority when styling, meaning it will overwrite anyother selectors that may be styling an element. ID selectors should be used very sparringly if possible. The syntax for an ID selector is "#" followed by the name you have given the ID, example: <br>
+                        <img src="../img/css-id.png" alt="">
+                    </li>
+
+                    <li>Class selectors: Class selectors targets classes you've made yourself and is used to make more specific styling for elements. The syntes for this selector is "." emidiatly followed by the name of the class name, here's an example: <br>
+                        <img src="../img/css-class.png" alt=""> <br>
+                    Class selectors can be applied to multiple elements and elements can even have multiple classes applied to it as well, but more on that when we get to CSS classes!
+                    </li>
+
+                    <li>Type/Element selector: The element selector targets HTML elements and will aply to every element, such as: img, h1, h2, p, div. The syntax is just the name of element. <br>
+                        <img src="../img/css-element.png" alt="">
+                    </li>
+
+                    <li>Universal selector: The universal selector will aply to every element and is simply an asteriks, like so: <br>
+                        <img src="../img/css-universal.png" alt="">
+                    </li>
+                </ol>
+                <div class="divider"></div>
+                <h2>CSS Property</h2>
+                <p>Properties are the actual things that we can change on elements and there's a whole bunch of them, but we'll only be covering some of the most common ones you need to begin with:</p>
+                <ol>
+                    <li><span class="code">Color </span>: Changes the color of an element.</li>
+                    <li><span class="code">Background-color </span>: Sets the background-color to whatever color you wish.</li>
+                    <li><span class="code">Font-size </span>: Changes the size of the font.</li>
+                    <li><span class="code">Font-family </span>: Changes the font-family.</li>
+                    <li><span class="code">Font-weight </span>: Changes the boldness of a font.</li>
+                    <li><span class="code">Margin </span>: Sets the margin around an element to create space around.</li>
+                    <li><span class="code">Padding </span>: Sets the padding inside an element to create space inside.</li>
+                    <li><span class="code">Border </span>: Will draw a border around the element in any width or color.</li>
+                    <li><span class="code">Width </span>: Sets the width to a specific width.</li>
+                    <li><span class="code">Height </span>: Sets the height to a specific height.</li>
+                </ol>
+                <div class="divider"></div>
+                <h2>CSS Value</h2>
+                <p>CSS values are the settings used to style HTML elements. They determine how properties like color, size, position, and more are applied. These values can be specific (e.g., 10px for a size) or predefined (e.g., red for a color). Understanding and choosing appropriate CSS values is essential for designing visually appealing and functional web pages.</p>
+                <p>So the example we've been using previously we can take this example:</p>
+                <img src="../img/css-syntax.png" alt="">
+                <p>This H1 tag har been selected using the element name. The property "color" has been selected and the value has been set to red, which results in the headers text being red.</p>
+                <div class="divider"></div>
+                <h2>Ways to insert CSS</h2>
+                <p>There is 3 ways to insert CSS into your HTML document.</p>
+                <ol>
+                    <li>Inline CSS</li>
+                    <li>Internal CSS</li>
+                    <li>External CSS</li>
+                </ol>
+                <p>Inline and Internal CSS are both inside the HTML document and is generally concidered bad practice.</p>
+                <p>External CSS is the most common one and the one we suggests getting comfortable with. External CSS is an external CSS document that gets linked to the HTML in the head like so:</p>
+                <img src="../img/css-external.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    </main>
+        
+    <footer>
+        <h3>&#60; /Made by Ronja &#38; Aiden &#62;</h3>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>

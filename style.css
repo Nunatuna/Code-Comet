@@ -86,7 +86,29 @@ nav a:hover{
 }
 
 .icon{
+    position: relative;
     height: 100%;
+}
+
+.icon-default{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.icon-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.icon-hover:hover{
+    opacity: 1;
+}
+
+.icon-default:hover{
+    opacity: 0;
 }
 
 .profile{
@@ -97,6 +119,8 @@ nav a:hover{
 }
 
 .dropdown-menu{
+    position: absolute;
+    z-index: 10;
     background-color: var(--background);
     border: 2px solid var(--text);
     color: var(--text);
@@ -212,13 +236,7 @@ nav a:hover{
 
         .big_nav img{
         height: 100%;
-        border-radius: 100%;
         transition: 0.3s ease-out;
-        }
-
-        .big_nav img:hover{
-        transform:rotateZ(40deg);
-        filter: drop-shadow(0 0 0.5rem var(--accent));
         }
     
         .big_nav a{
@@ -442,6 +460,7 @@ footer{
     padding-bottom: 5rem;
     overflow: hidden scroll;
     padding-right: 2%;
+    z-index: 1;
 }
 
 .learning-content{
@@ -493,20 +512,48 @@ footer{
 #active{
     color: var(--text);
     text-decoration: underline;
-}
+    }
 
-#active:hover{
+    #active:hover{
     color: var(--accent);
+    }
+
+    #active::before {
+    font: var(--fa-font-solid);
+    content: '\f0da';
+    margin-right: 0.5rem;
 }
 
 ol > li{
     margin-top: 1rem;
 }
 
-.vscode li:before{
-    content: url(../codecomet/img/vscode.png);
-    display: inline-block;
+ol > li a{
+    text-decoration: none;
+    color: var(--text);
 }
+
+ol > li a:hover{
+    text-decoration: underline;
+}
+
+.dropdown-menu.show{
+    z-index: 10;
+    position: relative;
+}
+
+.color-example{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+.color1{background-color: yellow; color: var(--shader); padding: 2rem;}
+.color2{background-color: orange; color: var(--shader); padding: 2rem;}
+.color3{background-color: red; color: var(--shader); padding: 2rem;}
+.color4{background-color: #00ff00; color: var(--shader); padding: 2rem;}
+.color5{background-color: blue; color: var(--text); padding: 2rem;}
+.color6{background-color: purple; color: var(--text); padding: 2rem;}
 
 /*********************************************
                 QUERIES

@@ -23,8 +23,8 @@
                 <span class="visually-hidden">Toggle Dropdown</span>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="htmlcourse.html">HTML</a></li>
-                <li><a class="dropdown-item" href="../csscourse.html">CSS</a></li>
+                <li><a class="dropdown-item" href="../htmlcourse/htmlcourse.html">HTML</a></li>
+                <li><a class="dropdown-item" href="csscourse.html">CSS</a></li>
                 <li><a class="dropdown-item" href="../javacourse.html">Javascript</a></li>
               </ul>
             </div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
-            <a class="icon" href="index.html"><img class="icon" src="../img/planet_icon.png" alt=""></a>
+            <a class="icon" href="../index.html"><img class="icon" src="../img/planet_icon.png" alt=""></a>
             <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </div>
     </nav>
@@ -62,14 +62,14 @@
         <div class="learning-hud">
             <div class="learning-menu">
                 <div class="course-header">
-                    <h2>HTML</h2>
-                    <i class="fa-brands fa-html5"></i>
+                    <h2>CSS</h2>
+                    <i class="fa-brands fa-css3"></i>
                 </div>
                 <div class="menu">
                     <h2>Intro</h2>
                     <ul>
-                        <li><a href="htmlcourse.html">What is HTML?</a></li>
-                        <li><a id="active" href="">Getting started</a></li>
+                        <li><a id="active" href="">What is CSS?</a></li>
+                        <li><a href="css-getting-started.html">Getting started</a></li>
                     </ul>
                     <h2>Fundamentals</h2>
                     <ul>
@@ -95,36 +95,11 @@
                 </div>
             </div>
             <div class="learning-content">
-                <h1>Getting started</h1>
-                <p>Webpages aren't just built up from singular tags on their own. Let's examen what it takes to build a web page:</p>
-                <img src="../img/html-fundamentals.png" alt="">
-                <p>Several things is happening, here's what they do:</p>
-                <ol>
-                    <li><span class="code">&#60;!DOCTYPE html&#62;</span>: this line of code is a old artifact but is still crucial for the HTML document to work. It essentially tell this browser which language this document is.</li>
-                    <li><span class="code">&#60;html&#62;</span>: The html tag let's the browser know where the html code starts and ends. The tags also has a attribute which tells the browser which language will be used on the website, which in this instance is english.</li>
-                    <li><span class="code">&#60;head&#62;</span>: The head element contains everything that should be included on the page without showing it in the contant. This could include SEO, style sheets, character declaration and more.</li>
-                    <li><span class="code">&#60;meta&#62;</span>: The meta tag contains metadata and with the attribute charset set to UTF-8, you'll be able to write in the language and with letters from the majority of human languges.</li>
-                    <li><span class="code">&#60;title&#62;</span>: The title element does what the name suggests. It sets the title of the page which can be displayed in the browser tabs.</li>
-                    <li><span class="code">&#60;body&#62;</span>: The body tag contains all content that the page should display including text, images, videoes and much more.</li>
-                </ol>
+                <h1>What is CSS?</h1>
+                <p>CSS, or Cascading Style Sheets, is a language that styles HTML documents, controlling their layout, colors, fonts, and more. It enhances the visual presentation of web pages, making them attractive and responsive across different devices.</p>
                 <div class="divider"></div>
-                <h2>Selecting your editor</h2>
-                <p>To even start writting any code you'll need a text editor. The most common editor is Visual Studio Code or VSCode for short. This will be your main tool for coding and creating websites!</p>
-                <p>The 5 most common text editors are:</p>
-                <ol>
-                    <li><a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a target="_blank" href="https://www.sublimetext.com/">Sublime Text <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a target="_blank" href="https://atom-editor.cc/">Atom <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a target="_blank" href="https://notepad-plus-plus.org/">Notepad++ <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a target="_blank" href="https://www.vim.org/">Vim <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                </ol>
-                <p>We highly recommend Visual Studio Code as is is the industry standard, it's free and hos tons of helpfull plugins for whatever you might need!</p>
-                <div class="divider"></div>
-                <h2>Naming conventions</h2>
-                <p>Most coding languages are case sensitive, meaning it matters if a letter is upper- or lowercase. HTML also looks at spaces and can give problems if we name a document with a space.</p>
-                <p>Your first HTML document should always be named:</p>
-                <img src="../img/html-index.png" alt="">
-                <p>We call it this to indicate that it's the landingpage for our website. The browser knows that it needs to look for at index.html file otherwise it won't know which page to open.</p>
+                <h2>CSS document</h2>
+                <p>CSS document unlike HTML documents have a very simple structure and does not need to declare that it's a CSS document. Like HTML, CSS is a case sensitive code language, so keep that in mind when naming classes in your style sheet!</p>
             </div>
         </div>
     </section>
