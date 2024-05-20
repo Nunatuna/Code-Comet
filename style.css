@@ -5,7 +5,7 @@ STYLE RESET
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
-    color: var(--text);
+    /* color: var(--text); */
 }
 
 :root{
@@ -50,7 +50,7 @@ h1,h2,h3{
     padding: 0;
 }
 
-h1{font-size: 4rem;}
+h1{font-size: 4rem; line-height: 4rem;}
 h2{font-size: 2rem;}
 h3{font-size: 1rem;}
 
@@ -243,6 +243,7 @@ nav a:hover{
         .big_nav a{
         text-decoration: none;
         transition: 0.3s ease-out;
+        color: var(--text);
     }
 }
 
@@ -253,13 +254,10 @@ nav a:hover{
 footer{
     display: flex;
     justify-content: center;
-    position:relative;
-    bottom: 0;
     width: 100%;
     background-color: var(--shader);
     padding: 2em;
     margin-top: 2em;
-    z-index: 2;
 }
 
 
@@ -281,7 +279,7 @@ footer{
 }
 
 .black-section{
-    padding: 8%;
+    padding: 4% 8%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -289,11 +287,10 @@ footer{
     }
 
     .black-section h1,
-    .black-section h2,
-    .black-section p{
+    .black-section h2{
     font-weight: 700;
     color: var(--text);
-}
+    }
 
 button{
     color: var(--background);
@@ -309,34 +306,17 @@ button{
 button:hover{
     box-shadow: 0 5px var(--dark-text);
     transform: translateY(3px);
-    background-color: var(--accent);
-    color: var(--text);
 }
 
 button:active{
     box-shadow: none;
     transform: translateY(8px);
-}
-
-.btn{
-    background-color: var(--text);
-    color: var(--background);
-    font-size: 1.2rem;
-}
-
-.btn:hover{
     background-color: var(--accent);
-}
-
-.btn i,
-.btn a{
-    text-decoration: none;
-    color: var(--background);
-}
-
-.btn:hover i,
-.btn:hover a{
     color: var(--text);
+}
+
+.launch button{
+    margin-top: 2rem;
 }
 
 .code{
@@ -467,6 +447,7 @@ button:active{
     border: 2px solid var(--text);
     border-radius: 0.3rem;
     padding: 2rem;
+    box-shadow: 5px 5px var(--dark-text);
 }
 
 .course-card p{
@@ -478,12 +459,11 @@ button:active{
 }
 
 .learning-menu{
-    position: fixed;
-    width: 20%; 
-    height: 75vh;
-    padding-bottom: 5rem;
+    position: sticky;
+    top: 1rem;
     overflow: hidden scroll;
-    padding-right: 2%;
+    padding-right: 2rem;
+    border-right: 1px solid var(--dark-text);
 }
 
 .learning-content{
@@ -534,7 +514,6 @@ button:active{
 
 #active{
     color: var(--text);
-    text-decoration: underline;
     }
 
     #active:hover{
