@@ -50,7 +50,7 @@ h1,h2,h3{
     padding: 0;
 }
 
-h1{font-size: 4rem; line-height: 4rem;}
+h1{font-size: 4rem; line-height: 4rem; margin-bottom: 2rem;}
 h2{font-size: 2rem;}
 h3{font-size: 1rem;}
 
@@ -319,11 +319,11 @@ button:active{
     margin-top: 2rem;
 }
 
-.code{
-    background-color: var(--dark-text);
-    color: var(--background);
+code{
+    background-color: var(--shader);
+    color: var(--text);
     border-radius: 0.4rem;
-    padding: 0.1rem;
+    padding: 0.3rem;
 }
 
 .cards{
@@ -450,12 +450,17 @@ button:active{
     box-shadow: 5px 5px var(--dark-text);
 }
 
-.course-card p{
+.course-card p:nth-child(4){
     color: var(--dark-text);
 }
 
 .start button{
     margin-top: 1rem;
+}
+
+.length{
+    color: var(--text);
+    margin: 1rem 0;
 }
 
 .learning-menu{
@@ -479,6 +484,7 @@ button:active{
 .learning-content img{
     border-radius: 0.4rem;
     margin: 2rem 0;
+    box-shadow: 5px 5px var(--dark-text);
 }
 
 .learning-hud{
@@ -526,6 +532,17 @@ button:active{
     margin-right: 0.5rem;
 }
 
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    }
+
+    .disabled::before {
+    font: var(--fa-font-solid);
+    content: '\f023';
+    margin-right: 0.5rem;
+}
+
 ol > li{
     margin-top: 1rem;
 }
@@ -556,6 +573,57 @@ ol > li a:hover{
 .color4{background-color: #00ff00; color: var(--shader); padding: 2rem;}
 .color5{background-color: blue; color: var(--text); padding: 2rem;}
 .color6{background-color: purple; color: var(--text); padding: 2rem;}
+
+
+
+/*********************************************
+                Resources
+*********************************************/
+.resources{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.card-link{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--shader);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 5px 5px var(--dark-text);
+
+}
+
+.card-link a{
+    text-decoration: none;
+}
+
+.card-link img{
+    width: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 200px;
+}
+
+.card-content h2{
+    font-size: 1.4rem;
+}
+
+.link{
+    color: var(--text);
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color: var(--dark-text);
+}
 
 /*********************************************
                 QUERIES

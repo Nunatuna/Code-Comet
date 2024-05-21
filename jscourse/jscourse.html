@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Comet</title>
-    <link rel="icon" href="../img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +11,12 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/1cc8df4c3e.js" crossorigin="anonymous"></script>
 </head>
-
+  
 <body>
   <header>
     <nav>
         <div class="big_nav">
-            <a class="icon" href="../index.html">
+            <a class="icon" href="index.html">
                 <img class="icon-deafult" src="../img/icon-default.png" alt="">
                 <img class="icon-hover" src="../img/icon-hover.png" alt="">
             </a>
@@ -44,7 +43,7 @@
                 </div>
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
-            <a class="icon" href="../index.html"><img class="icon" src="img/planet_icon.png" alt=""></a>
+            <a class="icon" href="index.html"><img class="icon" src="img/planet_icon.png" alt=""></a>
             <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </div>
     </nav>
@@ -56,55 +55,49 @@
         <div class="learning-hud">
             <div class="learning-menu">
                 <div class="course-header">
-                    <h2>CSS</h2>
-                    <i class="fa-brands fa-css3"></i>
+                    <h2>Javascript</h2>
+                    <i class="fa-brands fa-js"></i>
                 </div>
                 <div class="menu">
                     <h2>Intro</h2>
                     <ul>
-                        <li><a href="csscourse.html">What is CSS?</a></li>
-                        <li><a href="css-getting-started.html">Getting started</a></li>
+                        <li><a id="active" href="#">What is Javascript?</a></li>
+                        <li><a href="js-getting-started.html">Getting started</a></li>
                     </ul>
                     <h2>Fundamentals</h2>
                     <ul>
-                        <li><a href="css-colors.html">Colors</a></li>
-                        <li><a id="active" href="css-box-model.html">Box Model</a></li>
-                        <li><a href="css-fonts.html">Fonts</a></li>
-                        <li><a class="disabled" href="">Margin</a></li>
-                        <li><a class="disabled" href="">Padding</a></li>
-                        <li><a class="disabled" href="">Border</a></li>
-                        <li><a class="disabled" href="">Height/Width</a></li>
-                        <li><a class="disabled" href="">Fonts</a></li>
-                        <li><a class="disabled" href="">Icons</a></li>
-                        <li><a class="disabled" href="">Gradients</a></li>
+                        <li><a href="js-syntax.html">Syntax</a></li>
+                        <li><a class="disabled" href="">Statements</a></li>
+                        <li><a class="disabled" href="">Variables</a></li>
+                        <li><a class="disabled" href="">Let</a></li>
+                        <li><a class="disabled" href="">Const</a></li>
                     </ul>
                     <h2>Intermediate</h2>
                     <ul>
-                        <li><a class="disabled" href="">Lists</a></li>
-                        <li><a class="disabled" href="">CSS Grid</a></li>
-                        <li><a class="disabled" href="">Flexbox</a></li>
-                        <li><a class="disabled" href="">Positioning</a></li>
-                        <li><a class="disabled" href="">Navbar</a></li>
+                        <li><a class="disabled" href="">Operators</a></li>
+                        <li><a class="disabled" href="">Functions</a></li>
+                        <li><a class="disabled" href="">Objects</a></li>
+                        <li><a class="disabled" href="">Strings</a></li>
+                        <li><a class="disabled" href="">Arrays</a></li>
                     </ul>
                     <h2>Advanced</h2>
                     <ul>
-                        <li><a class="disabled" href="">Media Queries</a></li>
-                        <li><a class="disabled" href="">Pseudo classes/Elements</a></li>
-                        <li><a class="disabled" href="">Rem or Em?</a></li>
+                        <li><a class="disabled" href="">Math/Calculations</a></li>
+                        <li><a class="disabled" href="">If Else Statements</a></li>
+                        <li><a class="disabled" href="">For loops</a></li>
                     </ul>
                 </div>
             </div>
             <div class="learning-content">
-                <h1>Box Model</h1>
-                <p>In HTML, everything has a box around it. <br> With CSS you can control these boxes and change how they look and act.</p>
-                <p>The CSS box model consists of 4 things:</p>
-                <img src="../img/css-box-model.png" alt="">
-                <ol>
-                    <li><strong>Content</strong> - The content you add to the box, such as images and text</li>
-                    <li><strong>Padding</strong> - The padding creates space around the content inside the box</li>
-                    <li><strong>Border</strong> - The border makes a line around the content</li>
-                    <li><strong>Margin</strong> - The margin creates space around the box</li>
-                </ol>
+                <h1>What is Javascript?</h1>
+                <p>JavaScript is a programming language used to create interactive and dynamic content on web pages. It runs in the browser, enabling features like animations, form validations, and real-time updates without needing to reload the page.</p>
+                <p>While Javascript can run on it's own, combining it with HTML and CSS will make your websites even more interactive!</p>
+                <div class="divider"></div>
+                <h2>But how?</h2>
+                <p>There's countless ways to manipulate HTML elements with Javascript. <br>One example is the <span class="code">getElementByID().</span></p>
+                <p>This method will try and find an HTML element with an ID and target that with the function this script has.</p>
+                <p>In this example, there's a function called "openNav" which will display a hidden element when a button with an ID called "myNav" is pressed:</p>
+                <img src="../img/js-get-id.png" alt="">
             </div>
         </div>
     </section>
