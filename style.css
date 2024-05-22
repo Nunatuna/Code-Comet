@@ -12,7 +12,8 @@ STYLE RESET
     --background: #252525;
     --text: #ffffff;
     --dark-text: #ababab;
-    --accent: #366E67;
+    --accent: #5dc7c7;
+    --accent2: #366E67;
     --shader: #1f1f1f;
 }
 
@@ -118,22 +119,32 @@ nav a:hover{
     gap: 2rem;
 }
 
-.dropdown-menu{
-    position: absolute;
-    z-index: 10;
-    background-color: var(--background);
-    border: 2px solid var(--text);
-    color: var(--text);
-    font-size: 1.2rem;
+.login-container{
+    border: 2px solid var(--accent);
+    background-color: var(--text);
+    border-radius: 4rem;
+    overflow: hidden;
 }
 
-.dropdown-menu a{
-    color: var(--text);
-}
-
-.dropdown-menu a:hover{
+.sign-up{
     background-color: var(--accent);
-    color: var(--text);
+    color: var(--background) !important;
+    height: 20px;
+    padding: 1rem;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin-right: -5px;
+}
+
+.log-in{
+    background-color: white;
+    color: var(--background) !important;
+    height: 20px;
+    padding: 1rem;
+}
+
+.log-in-icon{
+    display: none;
 }
 
 /* Little burger menu nav for when screen is smaller than 520px */
@@ -244,7 +255,7 @@ nav a:hover{
         text-decoration: none;
         transition: 0.3s ease-out;
         color: var(--text);
-    }
+        }
 }
 
 
@@ -294,17 +305,17 @@ footer{
 
 button{
     color: var(--background);
-    background-color: var(--text);
+    background-color: var(--accent);
     padding: 0.4rem 0.8em;
     border-radius: 0.4rem;
-    box-shadow: 0 8px var(--dark-text);
+    box-shadow: 0 8px var(--accent2);
     transition: 0.15s ease-in-out;
-    border: 2px solid var(--dark-text);
+    border: none;
     margin-bottom: 8px;
 }
 
 button:hover{
-    box-shadow: 0 5px var(--dark-text);
+    box-shadow: 0 5px var(--accent2);
     transform: translateY(3px);
 }
 
@@ -312,7 +323,6 @@ button:active{
     box-shadow: none;
     transform: translateY(8px);
     background-color: var(--accent);
-    color: var(--text);
 }
 
 .accordion-button, 
@@ -321,8 +331,15 @@ button:active{
     transform: none;
 }
 
+.accordion{
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
 .launch button{
     margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
 }
 
 code{
@@ -357,7 +374,19 @@ code{
     border: 1px solid var(--dark-text);
 }
 
+.vertical-divider{
+    padding: 0;
+    border-left: 2px solid var(--dark-text);
+}
 
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    filter: grayscale(1);
+}
 
 .welcome{
         height: 100vh;
@@ -367,11 +396,24 @@ code{
         align-items: center;
         padding: 1% 8%;
     }
+    
+    .take-off{
+        position: absolute;
+        border-radius: 0.4rem;
+    }
+
+    .take-off span{
+        font-size: 7rem;
+        color: var(--accent);
+    }
 
     .take-off h1{
-        font-size: 5rem;
+        font-size: 4rem;
         padding: 0;
         margin: 0;
+        line-height: 5rem;
+        color: var(--text);
+        text-shadow: 0.4rem 0.4rem var(--accent2);
 }
 
 .login{
@@ -450,10 +492,10 @@ code{
 }
 
 .course-card{
-    border: 2px solid var(--text);
+    border: 5px solid var(--accent);
     border-radius: 0.3rem;
     padding: 2rem;
-    box-shadow: 5px 5px var(--dark-text);
+    box-shadow: 7px 7px var(--accent2);
 }
 
 .course-card p:nth-child(4){
@@ -643,6 +685,16 @@ ol > li a:hover{
     }
 }
 
+@media (max-width: 1100px) {
+    .log-in-icon{
+        display: block;
+    }
+
+    .login-container{
+        display: none;
+    }
+}
+
 @media (max-width: 1000px) {
     .course-select{
         grid-template-columns: 1fr;
@@ -665,6 +717,7 @@ ol > li a:hover{
     .cards{
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 738px) {
