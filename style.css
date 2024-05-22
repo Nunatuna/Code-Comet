@@ -315,6 +315,12 @@ button:active{
     color: var(--text);
 }
 
+.accordion-button, 
+.accordion-button:hover{
+    box-shadow: none;
+    transform: none;
+}
+
 .launch button{
     margin-top: 2rem;
 }
