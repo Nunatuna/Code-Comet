@@ -43,7 +43,50 @@
                 </div>
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
-            <a class="icon" href="index.html"><img class="icon" src="img/planet_icon.png" alt=""></a>
+            <a class="icon" href="../index.html"><img class="icon" src="../img/icon-default.png" alt=""></a>
+
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Learning Menu</button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="menu-mobile">
+                    <h2>Intro</h2>
+                    <ul>
+                        <li><a href="jscourse.html">What is Javascript?</a></li>
+                        <li><a href="js-getting-started.html">Getting started</a></li>
+                        <li><a href="js-glossary.html">Glossary</a></li>
+                    </ul>
+                    <h2>Fundamentals</h2>
+                    <ul>
+                        <li><a class="active" href="js-syntax.html">Syntax</a></li>
+                        <li><a class="disabled" href="">Statements</a></li>
+                        <li><a class="disabled" href="">Variables</a></li>
+                        <li><a class="disabled" href="">Let</a></li>
+                        <li><a class="disabled" href="">Const</a></li>
+                    </ul>
+                    <h2>Intermediate</h2>
+                    <ul>
+                        <li><a class="disabled" href="">Operators</a></li>
+                        <li><a class="disabled" href="">Functions</a></li>
+                        <li><a class="disabled" href="">Objects</a></li>
+                        <li><a class="disabled" href="">Strings</a></li>
+                        <li><a class="disabled" href="">Arrays</a></li>
+                    </ul>
+                    <h2>Advanced</h2>
+                    <ul>
+                        <li><a class="disabled" href="">Math/Calculations</a></li>
+                        <li><a class="disabled" href="">If Else Statements</a></li>
+                        <li><a class="disabled" href="">For loops</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+
+
             <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </div>
     </nav>
@@ -67,7 +110,7 @@
                     </ul>
                     <h2>Fundamentals</h2>
                     <ul>
-                        <li><a id="active" href="js-syntax.html">Syntax</a></li>
+                        <li><a class="active" href="js-syntax.html">Syntax</a></li>
                         <li><a class="disabled" href="">Statements</a></li>
                         <li><a class="disabled" href="">Variables</a></li>
                         <li><a class="disabled" href="">Let</a></li>

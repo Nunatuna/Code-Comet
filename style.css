@@ -335,6 +335,8 @@ button:active{
 .accordion{
     border-radius: 0.4rem;
     overflow: hidden;
+    position: relative;
+    z-index: -1;
 }
 
 .launch button{
@@ -512,7 +514,7 @@ code{
     margin: 1rem 0;
 }
 
-.menu{
+.learning-menu{
     position: sticky;
     top: 1rem;
     overflow: hidden scroll;
@@ -610,15 +612,15 @@ code{
     color: var(--accent);
 }
 
-#active{
+.active{
     color: var(--text);
     }
 
-    #active:hover{
+    .active:hover{
     color: var(--accent);
     }
 
-    #active::before {
+    .active::before {
     font: var(--fa-font-solid);
     content: '\f0da';
     margin-right: 0.5rem;
@@ -989,7 +991,7 @@ ol > li a:hover{
         display: none;
     }
 
-    .menu{
+    .learning-menu{
         display: none;
     }
 
@@ -1026,6 +1028,10 @@ ol > li a:hover{
         margin-top: 3rem;
     }
 
+    nav{
+        position: static;
+    }
+
     .cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1039,6 +1045,20 @@ ol > li a:hover{
 
     .live-videos {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome{
+        align-items: start;
+    }
+
+    .take-off h1{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .take-off span{
+        font-size: 3rem;
+        color: var(--accent);
     }
 }
 
@@ -1065,12 +1085,15 @@ ol > li a:hover{
     h1{
         font-size: 2rem;
     }
+
     h2{
         font-size: 1.7rem;
     }
+
     .course-card p{
         font-size: 0.8rem;
     }
+
     .resources{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1079,7 +1102,7 @@ ol > li a:hover{
 
     .live-videos {
         grid-template-columns: repeat(1, 1fr);
-      }
+    }
 }
 
 @media (max-width: 443px) {
