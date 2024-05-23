@@ -512,7 +512,7 @@ code{
     margin: 1rem 0;
 }
 
-.learning-menu{
+.menu{
     position: sticky;
     top: 1rem;
     overflow: hidden scroll;
@@ -534,6 +534,7 @@ code{
     border-radius: 0.4rem;
     margin: 2rem 0;
     box-shadow: 5px 5px var(--dark-text);
+    width: 100%;
 }
 
 .learning-hud{
@@ -564,6 +565,48 @@ code{
 }
 
 .menu ul li a:hover{
+    color: var(--accent);
+}
+
+.offcanvas-body{
+    background-color: var(--background);
+}
+
+.offcanvas-header{
+    background-color: var(--background);
+}
+
+.btn-close{
+    background-color: var(--accent);
+}
+
+.menu-mobile{
+    position: static;
+    top: 1rem;
+    overflow: hidden scroll;
+    padding-left: 2rem;
+}
+
+.menu-mobile h2{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.menu-mobile ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-mobile ul li a{
+    text-decoration: none;
+    color: var(--dark-text);
+    transition: 0.3s;
+}
+
+.menu-mobile ul li a:hover{
     color: var(--accent);
 }
 
@@ -945,6 +988,21 @@ ol > li a:hover{
     .login-container{
         display: none;
     }
+
+    .menu{
+        display: none;
+    }
+
+    .learning-hud{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'menu'
+        'content';
+    }
+
+    .learning-content{
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -981,7 +1039,7 @@ ol > li a:hover{
 
     .live-videos {
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
 }
 
 @media (max-width: 800px){

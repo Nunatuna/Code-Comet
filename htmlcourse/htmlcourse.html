@@ -43,22 +43,16 @@
                 </div>
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
-            <a class="icon" href="index.html"><img class="icon" src="img/planet_icon.png" alt=""></a>
-            <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
-        </div>
-    </nav>
-  </header>
-  
-  <main>
-    
-    <section class="black-section">
-        <div class="learning-hud">
-            <div class="learning-menu">
-                <div class="course-header">
-                    <h2>HTML</h2>
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="menu">
+            <a class="icon" href="../index.html"><img class="icon" src="../img/icon-default.png" alt=""></a>
+
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Learning Menu</button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="menu-mobile">
                     <h2>Intro</h2>
                     <ul>
                         <li><a id="active" href="htmlcourse.html">What is HTML?</a></li>
@@ -88,6 +82,53 @@
                     </ul>
                 </div>
             </div>
+            </div>
+
+            <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <section class="black-section">
+        <div class="learning-hud">
+            <div class="learning-menu">
+                <div class="course-header">
+                    <h2>HTML</h2>
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="menu">
+                    <h2>Intro</h2>
+                    <ul>
+                        <li><a href="htmlcourse.html">What is HTML?</a></li>
+                        <li><a href="getting-started.html">Getting started</a></li>
+                        <li><a href="html-glossary.html">Glossary</a></li>
+                    </ul>
+                    <h2>Fundamentals</h2>
+                    <ul>
+                        <li><a class="disabled" href="">Headings</a></li>
+                        <li><a class="disabled" href="">Paragraph</a></li>
+                        <li><a class="disabled" href="">Images</a></li>
+                        <li><a class="disabled" href="">Links</a></li>
+                    </ul>
+                    <h2>Intermediate</h2>
+                    <ul>
+                        <li><a class="disabled" href="">Classes</a></li>
+                        <li><a class="disabled" href="">ID</a></li>
+                        <li><a class="disabled" href="">Div</a></li>
+                        <li><a class="disabled" href="">Tables</a></li>
+                        <li><a class="disabled" href="">Lists</a></li>
+                    </ul>
+                    <h2>Advanced</h2>
+                    <ul>
+                        <li><a class="disabled" href="">Semantics</a></li>
+                        <li><a class="disabled" href="">HTML symbols</a></li>
+                        <li><a class="disabled" href="">Iframes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
             <div class="learning-content">
                 <h1>What is HTML?</h1>
                 <p>
@@ -125,10 +166,10 @@
     </main>
         
     <footer>
-        <h3>&#60; /Made by Ronja &#38; Aiden &#62;</h3>
+        <h3>&#60; /Made by Ronja &amp; Aiden &#62;</h3>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
   </html>
