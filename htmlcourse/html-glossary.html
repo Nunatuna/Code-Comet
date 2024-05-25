@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The place where you learn to code and develop websites.">
     <title>Code Comet</title>
     <link rel="icon" href="../img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/1cc8df4c3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
 </head>
   
 <body>
@@ -18,8 +19,7 @@
     <nav>
         <div class="big_nav">
             <a class="icon" href="../index.html">
-                <img class="icon-deafult" src="../img/icon-default.png" alt="">
-                <img class="icon-hover" src="../img/icon-hover.png" alt="">
+                <img src="../img/icon-default.png" alt="">
             </a>
             <a href="../courses.html"><button>Courses</button></a>
             <a href="../resoucres.html"><button>Resources</button></a>
@@ -28,7 +28,7 @@
                 <a target="_blank" href="https://www.instagram.com/codecomet.wrld?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-github"></i></a>
                 <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a class="log-in-icon" href="login.html"><i class="fa-solid fa-user"></i></a>
+                <a class="log-in-icon" href="../profile.html"><i class="fa-solid fa-user"></i></a>
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <a href="../profile.html"><button type="button" class="signup-btn">Sign Up</button></a>
                   <a href="../profile.html"><button type="button" class="login-btn">Login</button></a>
@@ -44,7 +44,10 @@
                   <a href="../courses.html"><button>Courses</button></a>
                   <a href="../resoucres.html"><button>Resources</button></a>
                   <a href="../blog.html"><button>Community</button></a>
-                  <a href="../login.html"><i class="fa-solid fa-user"></i></a>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="../profile.html"><button type="button" class="signup-btn">Sign Up</button></a>
+                    <a href="../profile.html"><button type="button" class="login-btn">Login</button></a>
+                  </div>
                 </div>
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
@@ -93,323 +96,230 @@
     </nav>
   </header>
   
-  <main>
+    <main>
     
-    <section class="black-section">
-        <div class="learning-hud">
-            <div class="learning-menu">
-                <div class="course-header">
-                    <h2>HTML</h2>
-                    <i class="fa-brands fa-html5"></i>
+        <section class="black-section">
+            <div class="learning-hud">
+                <div class="learning-menu">
+                    <div class="course-header">
+                        <h2>HTML</h2>
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="menu">
+                        <h2>Intro</h2>
+                        <ul>
+                            <li><a href="htmlcourse.html">What is HTML?</a></li>
+                            <li><a href="getting-started.html">Getting started</a></li>
+                            <li><a class="active" href="html-glossary.html">Glossary</a></li>
+                        </ul>
+                        <h2>Fundamentals</h2>
+                        <ul>
+                            <li><a class="disabled" href="">Headings</a></li>
+                            <li><a class="disabled" href="">Paragraph</a></li>
+                            <li><a class="disabled" href="">Images</a></li>
+                            <li><a class="disabled" href="">Links</a></li>
+                        </ul>
+                        <h2>Intermediate</h2>
+                        <ul>
+                            <li><a class="disabled" href="">Classes</a></li>
+                            <li><a class="disabled" href="">ID</a></li>
+                            <li><a class="disabled" href="">Div</a></li>
+                            <li><a class="disabled" href="">Tables</a></li>
+                            <li><a class="disabled" href="">Lists</a></li>
+                        </ul>
+                        <h2>Advanced</h2>
+                        <ul>
+                            <li><a class="disabled" href="">Semantics</a></li>
+                            <li><a class="disabled" href="">HTML symbols</a></li>
+                            <li><a class="disabled" href="">Iframes</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="menu">
-                    <h2>Intro</h2>
-                    <ul>
-                        <li><a href="htmlcourse.html">What is HTML?</a></li>
-                        <li><a href="getting-started.html">Getting started</a></li>
-                        <li><a class="active" href="html-glossary.html">Glossary</a></li>
-                    </ul>
-                    <h2>Fundamentals</h2>
-                    <ul>
-                        <li><a class="disabled" href="">Headings</a></li>
-                        <li><a class="disabled" href="">Paragraph</a></li>
-                        <li><a class="disabled" href="">Images</a></li>
-                        <li><a class="disabled" href="">Links</a></li>
-                    </ul>
-                    <h2>Intermediate</h2>
-                    <ul>
-                        <li><a class="disabled" href="">Classes</a></li>
-                        <li><a class="disabled" href="">ID</a></li>
-                        <li><a class="disabled" href="">Div</a></li>
-                        <li><a class="disabled" href="">Tables</a></li>
-                        <li><a class="disabled" href="">Lists</a></li>
-                    </ul>
-                    <h2>Advanced</h2>
-                    <ul>
-                        <li><a class="disabled" href="">Semantics</a></li>
-                        <li><a class="disabled" href="">HTML symbols</a></li>
-                        <li><a class="disabled" href="">Iframes</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="learning-content">
-              <h1>HTML Glossary</h1>
-              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="learning-content">
+                    <div class="download-header">
+                        <h1>HTML Glossary</h1>
+                        <a href="" download><button><i class="fa-solid fa-floppy-disk"></i> Download</button></a>
+                    </div>
+                    
+                    <h2 class="glossary-letter"><span>A</span></h2>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">Anchor</button>
-                    </h2>
-                    <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to create hyperlinks, which are clickable links to other pages or locations within the same page.
-                            - Example: `<a href="https://www.example.com">Visit Example</a>`</div>
+                    <button class="accordion">Anchor</button>
+                    <div class="accordion-panel">
+                    <p>Used to create hyperlinks, which are clickable links to other pages or locations within the same page. Example: <br><code>&lt;a href="myWebsite.com"&gt;Visit Site&lt;/a&gt;</code>
+                    </p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">Article</button>
-                    </h2>
-                    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Defines independent, self-contained content that could be distributed or reused, such as articles, blog posts, or news stories.
-                            - Example: `<article> ... </article>`</div>
+
+                    <button class="accordion">Article</button>
+                    <div class="accordion-panel">
+                    <p>Defines independent, self-contained content that could be distributed or reused, such as articles, blog posts, or news stories. Example: <br><code>&lt;article&gt;...&lt;/article&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">Aside</button>
-                    </h2>
-                    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to represent a section of content that is tangentially related to the content around it, such as sidebars or call-out boxes.
-                            - Example: `<aside> ... </aside>`</div>
+                   
+                    <button class="accordion">Aside</button>
+                    <div class="accordion-panel">
+                    <p>Used to represent a section of content that is tangentially related to the content around it, such as sidebars or call-out boxes. Example: <br><code>&lt;aside&gt;...&lt;/aside&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">Attribute</button>
-                    </h2>
-                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Additional information about HTML elements that provides more details or modifies behavior.
-                            - Example: `<a href="https://www.example.com">Link</a>`</div>
+                   
+                    <button class="accordion">Attribute</button>
+                    <div class="accordion-panel">
+                    <p>Additional information about HTML elements that provides more details or modifies behavior.</p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">Body</button>
-                    </h2>
-                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">The main content of an HTML document, where all visible elements are placed.
-                            - Example: `<body> ... </body>`</div>
+
+                    <h2 class="glossary-letter"><span>B</span></h2>
+
+                    <button class="accordion">Body</button>
+                    <div class="accordion-panel">
+                    <p>The main content of an HTML document, where all visible elements are placed. Example: <br><code>&lt;body&gt;...&lt;/body&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-6">Button</button>
-                    </h2>
-                    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to create clickable buttons within HTML documents.
-                            - Example: `<button type="button">Click Me</button>`</div>
+                    
+                    <button class="accordion">Button</button>
+                    <div class="accordion-panel">
+                    <p>Used to create clickable buttons within HTML documents. Example: <br><code>&lt;button&gt;Click Me&lt;/button&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">Class</button>
-                    </h2>
-                    <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">An attribute used to assign one or more class names to an element, which can then be targeted by CSS or JavaScript.
-                            - Example: `<div class="example"></div>`</div>
+                   
+                    <h2 class="glossary-letter"><span>C</span></h2>
+
+                    <button class="accordion">Class</button>
+                    <div class="accordion-panel">
+                    <p>An attribute used to assign one or more class names to an element, which can then be targeted by CSS or JavaScript. Example: <br><code>&lt;div class="example"&gt;...&lt;/div&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">Comment</button>
-                    </h2>
-                    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"> Used to insert comments in the HTML code that are not displayed in the browser.`</div>
+                    
+                    <button class="accordion">Comment</button>
+                    <div class="accordion-panel">
+                    <p>Used to insert comments in the HTML code that are not displayed in the browser. Example: <br><code>&lt;-- This is a comment --&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">Div</button>
-                    </h2>
-                    <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">A block-level container used to group elements and apply styles or layout schemes.
-                            - Example: `<code><div> ... </div>`</code></div>
+
+                    <h2 class="glossary-letter"><span>D</span></h2>
+
+                    <button class="accordion">Div</button>
+                    <div class="accordion-panel">
+                    <p>A block-level container used to group elements and apply styles or layout schemes. Example: <br><code>&lt;div&gt;...&lt;/div&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">Doctype</button>
-                    </h2>
-                    <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">A declaration at the beginning of an HTML document that specifies the version of HTML used.
-                            - Example: `<!DOCTYPE html>`</div>
+                    
+                    <button class="accordion">Doctype</button>
+                    <div class="accordion-panel">
+                    <p>A declaration at the beginning of an HTML document that specifies the version of HTML used. Example: <br><code>&lt;!DOCTYPE html&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">Element</button>
-                    </h2>
-                    <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">The fundamental building block of HTML, represented by tags that define the structure and content of a web page.
-                            - Example: `<p>This is a paragraph.</p>`</div>
+
+                    <h2 class="glossary-letter"><span>E</span></h2>
+                    
+                    <button class="accordion">Element</button>
+                    <div class="accordion-panel">
+                    <p>The fundamental building block of HTML, represented by tags that define the structure and content of a web page. Example: <br><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">Form</button>
-                    </h2>
-                    <div id="flush-collapse13" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to create interactive controls for user input, such as text fields, checkboxes, and submit buttons.
-                            - Example: `<form action="/submit" method="post"><input type="text" name="name"><input type="submit"></form>`</div>
+
+                    <h2 class="glossary-letter"><span>F</span></h2>
+                    
+                    <button class="accordion">Form</button>
+                    <div class="accordion-panel">
+                    <p>Used to create interactive controls for user input, such as text fields, checkboxes, and submit buttons. Example: <br><code>&lt;form action="submit"&gt;...&lt;/form&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">Header</button>
-                    </h2>
-                    <div id="flush-collapse14" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Represents introductory content or a set of navigational links.
-                            - Example: `<header> ... </header>`</div>
+
+                    <h2 class="glossary-letter"><span>H</span></h2>
+                   
+                    <button class="accordion">Header</button>
+                    <div class="accordion-panel">
+                    <p>Represents introductory content or a set of navigational links. Example: <br><code>&lt;header&gt;...&lt;/header&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapse15">Head</button>
-                    </h2>
-                    <div id="flush-collapse15" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Contains meta-information about the HTML document, such as its title, character set, and links to scripts and stylesheets.
-                            - Example: `<head> ... </head>`</div>
+                   
+                    <button class="accordion">Head</button>
+                    <div class="accordion-panel">
+                    <p>Contains meta-information about the HTML document, such as its title, character set, and links to scripts and stylesheets. Example: <br><code>&lt;head&gt;...&lt;/heder&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapse16">Heading</button>
-                    </h2>
-                    <div id="flush-collapse16" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Elements used to define headings of different levels, from `<h1>` (highest) to `<h6>` (lowest).
-                            - Example: `<h1>Main Heading</h1>, <h2>Subheading</h2>
-                        </h6>
-                        </h1>
+                    
+                    <button class="accordion">Heading</button>
+                    <div class="accordion-panel">
+                    <p>Elements used to define headings of different levels, from h1 to h6 Example: <br><code>&lt;h1&gt;Biggest heading&lt;/h1&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapse17">Iframe</button>
-                    </h2>
-                    <div id="flush-collapse17" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to embed another HTML page within the current page.
-                            - Example: `<iframe src="https://www.example.com"></iframe>`</div>
+
+                    <h2 class="glossary-letter"><span>I</span></h2>
+                    
+                    <button class="accordion">Iframe</button>
+                    <div class="accordion-panel">
+                    <p>Used to embed another HTML page within the current page. Example: <br><code>&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse18" aria-expanded="false" aria-controls="flush-collapse18">Image</button>
-                    </h2>
-                    <div id="flush-collapse18" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to embed images in HTML documents.
-                            - Example: `<img src="image.jpg" alt="Description of image">`</div>
+                    
+                    <button class="accordion">Image</button>
+                    <div class="accordion-panel">
+                    <p>Used to embed images in HTML documents. Example: <br><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse19" aria-expanded="false" aria-controls="flush-collapse19">Input</button>
-                    </h2>
-                    <div id="flush-collapse19" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used within forms to create input controls such as text fields, radio buttons, and checkboxes.
-                            - Example: `<input type="text" name="username">`</div>
+                    
+                    <button class="accordion">Input</button>
+                    <div class="accordion-panel">
+                    <p>Used within forms to create input controls such as text fields, radio buttons, and checkboxes. Example: <br><code>&lt;input type="text" name="username"&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse20" aria-expanded="false" aria-controls="flush-collapse20">Link</button>
-                    </h2>
-                    <div id="flush-collapse20" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to define relationships between the current document and an external resource, such as stylesheets.
-                            - Example: `<link rel="stylesheet" href="styles.css">`</div>
+
+                    <h2 class="glossary-letter"><span>L</span></h2>
+                   
+                    <button class="accordion">Link</button>
+                    <div class="accordion-panel">
+                    <p>Used to define relationships between the current document and an external resource, such as stylesheets. Example: <br><code>&lt;link rel="stylesheet" href="styles.css"</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse21" aria-expanded="false" aria-controls="flush-collapse21">List</button>
-                    </h2>
-                    <div id="flush-collapse21" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Elements used to create lists. There are two types: ordered (`<ol></ol>`) and unordered (`<ul></ul>`).
-                            - Example: `<ul><li>Item 1</li><li>Item 2</li></ul>, <ol><li>First item</li><li>Second item</li></ol>`</div>
+                   
+                    <button class="accordion">List</button>
+                    <div class="accordion-panel">
+                    <p>Elements used to create lists. There are two types: Ordered list <code>&lt;ol&gt;</code> and unordered list <code>&lt;ul&gt;</code>, which both then contain list items <code>&lt;li&gt;</code> Example: <br><code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse22" aria-expanded="false" aria-controls="flush-collapse22">Main</button>
-                    </h2>
-                    <div id="flush-collapse22" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Represents the main content of the `<body></body>` of a document, which is directly related to the central topic of the document.
-                            - Example: `<main> ... </main>`</div>
-                        </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse23" aria-expanded="false" aria-controls="flush-collapse23">Meta</button>
-                    </h2>
-                    <div id="flush-collapse23" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Provides metadata about the HTML document, such as description, keywords, and character set.
-                            - Example: `<meta charset="UTF-8">`</div>
+                   
+                    <h2 class="glossary-letter"><span>M</span></h2>
+
+                    <button class="accordion">Main</button>
+                    <div class="accordion-panel">
+                    <p>Represents the main content of the body of a document, which is directly related to the central topic of the document. Example: <br><code>&lt;main&gt;...&lt;/main&gt;</code></p>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse25" aria-expanded="false" aria-controls="flush-collapse25">Nav</button>
-                    </h2>
-                    <div id="flush-collapse25" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to define a set of navigational links.
-                            - Example: `<nav> ... </nav>`</div>
-                        </div>
+                   
+                    <button class="accordion">Meta</button>
+                    <div class="accordion-panel">
+                    <p>Provides metadata about the HTML document, such as description, keywords, and character set. Example: <br><code>&lt;meta charset="UTF-8"&gt;</code></p>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse26" aria-expanded="false" aria-controls="flush-collapse26">Paragraph</button>
-                        </h2>
-                        <div id="flush-collapse26" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Used to define a block of text as a paragraph.
-                                - Example: `<p>This is a paragraph.</p>`</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse27" aria-expanded="false" aria-controls="flush-collapse27">Script</button>
-                            </h2>
-                    <div id="flush-collapse27" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Used to include or reference JavaScript within an HTML document.
-                            - Example: `<script src="script.js"></script>`</div>
-                        </div>
+
+                    <h2 class="glossary-letter"><span>N</span></h2>
+                    
+                    <button class="accordion">Nav</button>
+                    <div class="accordion-panel">
+                    <p>Used to define a set of navigational links. Example: <br><code>&lt;nav&gt;...&lt;/nav&gt;</code></p>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse28" aria-expanded="false" aria-controls="flush-collapse28">Section</button>
-                        </h2>
-                        <div id="flush-collapse28" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Defines a section in a document, such as chapters, headers, footers, or any other sections of the document.
-                                - Example: `<section> ... </section>`</div>
-                            </div>
+
+                    <h2 class="glossary-letter"><span>P</span></h2>
+                   
+                    <button class="accordion">Paragraph</button>
+                    <div class="accordion-panel">
+                    <p>Used to define a block of text as a paragraph. Example: <br><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse29" aria-expanded="false" aria-controls="flush-collapse29">Span</button>
-                        </h2>
-                        <div id="flush-collapse29" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">An inline container used to mark up a part of a text or a part of a document.
-                                    - Example: `<span>This is a span.</span>`</div>
-                        </div>
+
+                    <h2 class="glossary-letter"><span>S</span></h2>
+                    
+                    <button class="accordion">Script</button>
+                    <div class="accordion-panel">
+                    <p>Used to include or reference JavaScript within an HTML document. Example: <br><code>&lt;script src="script.js"&gt;...&lt;/script&gt;</code></p>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse30" aria-expanded="false" aria-controls="flush-collapse30">Table</button>
-                        </h2>
-                        <div id="flush-collapse30" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Used to create a table.
-                                        - Example: `<table><tr><th>Header</th></tr><tr><td>Data</td></tr></table>`</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse31" aria-expanded="false" aria-controls="flush-collapse31">Tag</button>
-                            </h2>
-                            <div id="flush-collapse31" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">The markup used to define HTML elements, consisting of an opening tag and a closing tag, with content in between.
-                                            - Example: `<div> ... </div>`</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse32" aria-expanded="false" aria-controls="flush-collapse32">Title</button>
-                            </h2>
-                                <div id="flush-collapse32" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">An element within the `<head></head>` section that defines the title of the document, displayed in the browser's title bar or tab.
-                                                    - Example: `<title>My Web Page</title>`
-                                    </div>
-                                </div>
-                            </div>            
-                        </div> 
+                    
+                    <button class="accordion">Section</button>
+                    <div class="accordion-panel">
+                    <p>Defines a section in a document, such as chapters, headers, footers, or any other sections of the document. Example: <br><code>&lt;section&gt;...&lt;/section&gt;</code></p>
                     </div>
+                  
+                    <button class="accordion">Span</button>
+                    <div class="accordion-panel">
+                    <p>An inline container used to mark up a part of a text or a part of a document. Example: <br><code>&lt;span&gt;This is a span.&lt;/span&gt;</code></p>
+                    </div>
+
+                    <h2 class="glossary-letter"><span>T</span></h2>
+                   
+                    <button class="accordion">Table</button>
+                    <div class="accordion-panel">
+                    <p>Used to create a table. Example: <br><code>&lt;table&gt;...&lt;/table&gt;</code></p>
+                    </div>
+                   
+                    <button class="accordion">Tag</button>
+                    <div class="accordion-panel">
+                    <p>The markup used to define HTML elements, consisting of an opening tag and a closing tag, with content in between. Example: <br><code>&lt;div&gt;...&lt;/div&gt;</code></p>
+                    </div>
+                  
+                    <button class="accordion">Title</button>
+                    <div class="accordion-panel">
+                    <p>An element within the head section that defines the title of the document, displayed in the browser's title bar or tab. Example: <br><code>&lt;title&gt;My web page!&lt;/title&gt;</code></p>
+                    </div>
+
                 </div>
             </div>
         </section>

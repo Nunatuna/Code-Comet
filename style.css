@@ -51,7 +51,7 @@ h1,h2,h3{
     padding: 0;
 }
 
-h1{font-size: 4rem; line-height: 4rem; margin-bottom: 2rem;}
+h1{font-size: 4rem; line-height: 4rem; margin-bottom: 2rem; font-weight: bold;}
 h2{font-size: 2rem;}
 h3{font-size: 1rem;}
 
@@ -65,7 +65,9 @@ p{
                 NAVBAR
 *********************************************/
 nav{
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
     top: 0;
     left: 0;
     padding: 1% 0%;
@@ -151,6 +153,7 @@ nav a:hover{
     justify-content: flex-end;
     align-items: center;
     position: fixed;
+    z-index: 10;
     top: 0;
     width: 100%;
     gap: 2rem;
@@ -298,8 +301,12 @@ footer h3:nth-child(3){
 *********************************************/
 
 .white-section{
+    padding: 8% 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--text);
-    padding: 8%;
+    color: var(--text);
     }
 
     .white-section h1,
@@ -308,10 +315,16 @@ footer h3:nth-child(3){
     .white-section i{
     color: var(--background);
     padding: 0;
+    margin-bottom: 2rem;
+
+}
+
+.white-section h1{
+    font-weight: bold;
 }
 
 .black-section{
-    padding: 4% 8%;
+    padding: 8% 8%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -333,6 +346,7 @@ button{
     transition: 0.15s ease-in-out;
     border: none;
     margin-bottom: 8px;
+    font-weight: bold;
 }
 
 button:hover{
@@ -346,17 +360,43 @@ button:active{
     background-color: var(--accent);
 }
 
-.accordion-button, 
-.accordion-button:hover{
+.accordion {
+    background-color: var(--text);
+    color: var(--background) !important;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: none;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+
+.accordion:hover{
     box-shadow: none;
     transform: none;
 }
-
-.accordion{
-    border-radius: 0.4rem;
+  
+.accordion-active, .accordion:hover {
+    background-color: var(--accent); 
+    color: var(--background);
+}
+  
+.accordion-panel {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+    display: none;
+    background-color: var(--text);
     overflow: hidden;
-    position: relative;
-    z-index: -1;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.accordion-panel p{
+    color: var(--background) !important;
 }
 
 .launch button{
@@ -411,7 +451,50 @@ code{
     filter: grayscale(1);
 }
 
+.sparkles{
+    display: block;
+    margin-bottom: 2rem;
+}
 
+.sparkles:after{
+    content: '';
+    background: url("img/sparkles.png");
+    background-size: cover;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.download-header{
+    display: flex;
+    align-items: center;
+}
+
+.download-header a:nth-child(2){
+    margin-left: auto;
+}
+
+.glossary-letter{
+    position: relative;
+}
+
+.glossary-letter:after{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 90%;
+    position: absolute;
+    margin-left: 10%;
+    top: 50%;
+    left: 0;
+    background: var(--accent);
+}
+
+.glossary-letter span{
+    color: var(--accent);
+}
 /*********************************************
                 INDEX
 *********************************************/
@@ -487,14 +570,22 @@ code{
     font-size: 2rem;
 }
 
+.dare-share-care{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.dare-share-care h2{
+    color: var(--text);
+}
+
 /*********************************************
                 COURSES
 *********************************************/
-
-.courses{
-    margin-top: 4rem;
-    padding: 1% 8%;
-}
 
 .html{grid-area: html;}
 .css{grid-area: css;}
@@ -711,8 +802,13 @@ ol > li a:hover{
     border-radius: 0.4rem;
     overflow: hidden;
     border: 2px solid var(--accent);
-    /* box-shadow: 5px 5px var(--dark-text); */
+    transition: 0.3s;
 
+}
+
+.card-link:hover{
+    box-shadow: 0 19px 38px #366e6744, 0 15px 12px #366e673c;
+    transform: scale(105%);
 }
 
 .card-link a{
@@ -750,6 +846,10 @@ ol > li a:hover{
     color: var(--dark-text);
 }
 
+.resources-btn{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /*********************************************
                 BLOG
@@ -1006,9 +1106,10 @@ ol > li a:hover{
 *********************************************/
 .profile-header{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
     padding: 2% 8%;
-    height: 200px;
+    height: 250px;
     background-image: url("img/footer-bg.png");
     border-bottom: 2px solid var(--text);
 }
@@ -1035,7 +1136,7 @@ ol > li a:hover{
     align-items: center;
     gap: 1rem;
     position: relative;
-    bottom: -150px;
+    bottom: 70px;
 }
 
 .profile-picture img{
@@ -1207,7 +1308,7 @@ ol > li a:hover{
 
     .live-videos {
         grid-template-columns: repeat(3, 1fr);
-      }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1247,7 +1348,8 @@ ol > li a:hover{
         justify-content: center;
     }
 
-    .profile-header h1{
+    .profile-header h1,
+    .profile-header h2{
         display: none;
     }
 
@@ -1261,7 +1363,8 @@ ol > li a:hover{
         display: block;
     }
 
-    .login-container{
+    .login-btn,
+    .signup-btn{
         display: none;
     }
 
@@ -1278,6 +1381,10 @@ ol > li a:hover{
 
     .learning-content{
         padding-left: 0;
+    }
+
+    .learning-content img{
+        width: 100%;
     }
 
     .dont-display{
@@ -1344,6 +1451,9 @@ ol > li a:hover{
         font-size: 3rem;
         color: var(--accent);
     }
+    .dare-share-care{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 800px){
@@ -1375,6 +1485,24 @@ ol > li a:hover{
         font-size: 3rem;
         margin: 2rem 0;
     }
+    .begin{
+        flex-direction: column;
+    }
+    .begin a{
+        width: 100%;
+    }
+    .giga-button{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer h3:nth-child(3) {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 570px) {
@@ -1398,6 +1526,9 @@ ol > li a:hover{
 
     .live-videos {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .dare-share-care{
+        grid-template-columns: 1fr;
     }
 }
 

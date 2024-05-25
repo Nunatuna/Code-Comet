@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The place where you learn to code and develop websites.">
     <title>Code Comet</title>
     <link rel="icon" href="../img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,8 +19,7 @@
     <nav>
         <div class="big_nav">
             <a class="icon" href="../index.html">
-                <img class="icon-deafult" src="../img/icon-default.png" alt="">
-                <img class="icon-hover" src="../img/icon-hover.png" alt="">
+                <img src="../img/icon-default.png" alt="">
             </a>
             <a href="../courses.html"><button>Courses</button></a>
             <a href="../resoucres.html"><button>Resources</button></a>
@@ -28,7 +28,7 @@
                 <a target="_blank" href="https://www.instagram.com/codecomet.wrld?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-github"></i></a>
                 <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a class="log-in-icon" href="login.html"><i class="fa-solid fa-user"></i></a>
+                <a class="log-in-icon" href="../profile.html"><i class="fa-solid fa-user"></i></a>
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <a href="../profile.html"><button type="button" class="signup-btn">Sign Up</button></a>
                   <a href="../profile.html"><button type="button" class="login-btn">Login</button></a>
@@ -44,7 +44,10 @@
                   <a href="../courses.html"><button>Courses</button></a>
                   <a href="../resoucres.html"><button>Resources</button></a>
                   <a href="../blog.html"><button>Community</button></a>
-                  <a href="../login.html"><i class="fa-solid fa-user"></i></a>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="../profile.html"><button type="button" class="signup-btn">Sign Up</button></a>
+                    <a href="../profile.html"><button type="button" class="login-btn">Login</button></a>
+                  </div>
                 </div>
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
@@ -137,226 +140,167 @@
                 </div>
             </div>
             <div class="learning-content">
-                <h1>Javascript Glossary</h1>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="download-header">
+                    <h1>Javascript Glossary</h1>
+                    <a href="" download><button><i class="fa-solid fa-floppy-disk"></i> Download</button></a>
+                </div>
+                
+                <h2 class="glossary-letter"><span>A</span></h2>
+                
+                <button class="accordion">AJAX</button>
+                <div class="accordion-panel">
+                <p>A technique for updating parts of a webpage without reloading the whole page using asynchronous HTTP requests. Example: <br><code>fetch('https://api.example.com/data').then(response &rArr; response.json()).then(data &rArr; console.log(data));</code></p>
+                </div>
+                
+                <button class="accordion">Array</button>
+                <div class="accordion-panel">
+                <p>A data structure that can hold multiple values under a single name, and these values can be accessed by an index. Example: <br><code>let numbers = [1, 2, 3, 4, 5];</code></p>
+                </div>
+                
+                <button class="accordion">Asynchronous</button>
+                <div class="accordion-panel">
+                <p>A way of programming where operations can proceed without blocking the main thread, often used with AJAX, Promises, and async/await. Example: <br><code>async function fetchData() { let response = await fetch(url); }</code></p>
+                </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">AJAX</button>
-                        </h2>
-                        <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A technique for updating parts of a webpage without reloading the whole page using asynchronous HTTP requests.
-                                - Example: `fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data));`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">Array</button>
-                        </h2>
-                        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A data structure that can hold multiple values under a single name, and these values can be accessed by an index.
-                                - Example: `let numbers = [1, 2, 3, 4, 5];`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">Asynchronous</button>
-                        </h2>
-                        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A way of programming where operations can proceed without blocking the main thread, often used with AJAX, Promises, and async/await.
-                                - Example: `async function fetchData() { let response = await fetch(url); }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">Boolean</button>
-                        </h2>
-                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A data type that can have a value of true or false.
-                                - Example: `let isAvailable = true;`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">Callback</button>
-                        </h2>
-                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A function given as an argument to another function and executed after an event or task is completed.
-                                - Example: `function fetchData(callback) { setTimeout(() => { callback('data'); }, 1000); }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-6">Class</button>
-                        </h2>
-                        <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A syntactic sugar for prototype-based inheritance in JavaScript, allowing the creation of objects and managing inheritance.
-                                - Example: `class Person { constructor(name) { this.name = name; } }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">Closure</button>
-                        </h2>
-                        <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A function along with references to its surrounding lexical environment, allowing a function to access variables from an outer function even after the outer function has returned.
-                                - Example: `function outer() { let x = 10; return function inner() { console.log(x); }; }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">DOM</button>
-                        </h2>
-                        <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A programming interface for HTML and XML documents, representing the document as a tree structure where each node is a part of the document.
-                                - Example: `document.getElementById('example').innerText = 'Hello, World!';`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">Event</button>
-                        </h2>
-                        <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">An action or occurrence detected by the system that JavaScript can react to, such as a user click or a loaded page.
-                                - Example: `button.addEventListener('click', () => { alert('Button clicked!'); });`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">Function</button>
-                        </h2>
-                        <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A block of code that can be defined once and executed many times.
-                                - Example: `function greet(name) { return 'Hello, ' + name; }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">Hoisting</button>
-                        </h2>
-                        <div id="flush-collapse11" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">JavaScript's default behavior of moving variable and function declarations to the top of their scope before code execution.
-                                - Example: `console.log(x); var x = 5; // undefined`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">JSON</button>
-                        </h2>
-                        <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate.
-                                - Example: `let obj = JSON.parse('{"name":"John", "age":30}');`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">Loop</button>
-                        </h2>
-                        <div id="flush-collapse13" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A control structure that repeats a sequence of instructions until a specific condition is met.
-                                - Example: `for(let i = 0; i < 5; i++) { console.log(i); }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">Null</button>
-                        </h2>
-                        <div id="flush-collapse14" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A special keyword that represents a deliberate non-value, meaning "no value".
-                                - Example: `let value = null;`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapse15">Object</button>
-                        </h2>
-                        <div id="flush-collapse15" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A collection of key-value pairs (properties and methods) used to store and manipulate data.
-                                - Example: `let person = { name: 'Alice', age: 25 };`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapse16">Promise</button>
-                        </h2>
-                        <div id="flush-collapse16" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">An object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
-                                - Example: `let promise = new Promise((resolve, reject) => { resolve('Success!'); });`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapse17">Prototype</button>
-                        </h2>
-                        <div id="flush-collapse17" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A mechanism by which JavaScript objects can inherit properties and methods from one another.
-                                - Example: `function Person(name) { this.name = name; } Person.prototype.greet = function() { console.log('Hello, ' + this.name); };`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse18" aria-expanded="false" aria-controls="flush-collapse18">Recursion</button>
-                        </h2>
-                        <div id="flush-collapse18" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A technique where a function calls itself directly or indirectly to solve a problem.
-                                - Example: `function factorial(n) { if (n === 0) { return 1; } return n * factorial(n - 1); }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse19" aria-expanded="false" aria-controls="flush-collapse19">Scope</button>
-                        </h2>
-                        <div id="flush-collapse19" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">The current context of code, which determines the visibility and accessibility of variables.
-                                - Example: `let x = 10; function scopeTest() { let y = 20; console.log(x, y); }`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse20" aria-expanded="false" aria-controls="flush-collapse20">String</button>
-                        </h2>
-                        <div id="flush-collapse20" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A sequence of characters used to represent text.
-                                - Example: `let greeting = 'Hello, World!';`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse21" aria-expanded="false" aria-controls="flush-collapse21">This</button>
-                        </h2>
-                        <div id="flush-collapse21" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A keyword that refers to the object it belongs to in the current code context.
-                                - Example: `let person = { name: 'Alice', greet() { console.log('Hello, ' + this.name); } };`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse22" aria-expanded="false" aria-controls="flush-collapse22">Undefined</button>
-                        </h2>
-                        <div id="flush-collapse22" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A variable that has been declared but not assigned a value.
-                                - Example: `let x; console.log(x); // undefined`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse23" aria-expanded="false" aria-controls="flush-collapse23">Variable</button>
-                        </h2>
-                        <div id="flush-collapse23" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">A container for storing data that can be changed during program execution.
-                                - Example: `let age = 25;`</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse24" aria-expanded="false" aria-controls="flush-collapse24">XMLHttpRequest</button>
-                        </h2>
-                        <div id="flush-collapse24" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">An API for transferring data between a web browser and a server, often used for AJAX requests.
-                                - Example: `let xhr = new XMLHttpRequest(); xhr.open('GET', 'https://api.example.com/data'); xhr.send();`</div>
-                        </div>
-                    </div>
-                </div> 
+                <h2 class="glossary-letter"><span>B</span></h2>
+               
+                <button class="accordion">Boolean</button>
+                <div class="accordion-panel">
+                <p>A data type that can have a value of true or false. Example: <br><code>let isAvailable = true;</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>C</span></h2>
+               
+                <button class="accordion">Callback</button>
+                <div class="accordion-panel">
+                <p>A function given as an argument to another function and executed after an event or task is completed. Example: <br><code>function fetchData(callback) { setTimeout(() &rArr; { callback('data'); }, 1000); }</code></p>
+                </div>
+                
+                <button class="accordion">Class</button>
+                <div class="accordion-panel">
+                <p>A syntactic sugar for prototype-based inheritance in JavaScript, allowing the creation of objects and managing inheritance. Example: <br><code>class Person { constructor(name) { this.name = name; } }</code></p>
+                </div>
+                
+                <button class="accordion">Closure</button>
+                <div class="accordion-panel">
+                <p>A function along with references to its surrounding lexical environment, allowing a function to access variables from an outer function even after the outer function has returned. Example: <br><code>function outer() { let x = 10; return function inner() { console.log(x); }; }</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>D</span></h2>
+                
+                <button class="accordion">DOM</button>
+                <div class="accordion-panel">
+                <p>A programming interface for HTML and XML documents, representing the document as a tree structure where each node is a part of the document. Example: <br><code>document.getElementById('example').innerText = 'Hello, World!';</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>E</span></h2>
+               
+                <button class="accordion">Event</button>
+                <div class="accordion-panel">
+                <p>An action or occurrence detected by the system that JavaScript can react to, such as a user click or a loaded page. Example: <br><code>button.addEventListener('click', () &rArr; { alert('Button clicked!'); });</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>F</span></h2>
+               
+                <button class="accordion">Function</button>
+                <div class="accordion-panel">
+                <p>A block of code that can be defined once and executed many times. Example: <br><code>function greet(name) { return 'Hello, ' + name; }</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>H</span></h2>
+               
+                <button class="accordion">Hoisting</button>
+                <div class="accordion-panel">
+                <p>JavaScript's default behavior of moving variable and function declarations to the top of their scope before code execution. Example: <br><code>console.log(x); var x = 5; // undefined</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>J</span></h2>
+               
+                <button class="accordion">JSON</button>
+                <div class="accordion-panel">
+                <p>A lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. Example: <br><code>let obj = JSON.parse('{"name":"John", "age":30}');</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>L</span></h2>
+               
+                <button class="accordion">Loop</button>
+                <div class="accordion-panel">
+                <p>A control structure that repeats a sequence of instructions until a specific condition is met. Example: <br><code>for(let i = 0; i &lt; 5; i++) { console.log(i); }</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>N</span></h2>
+                
+                <button class="accordion">Null</button>
+                <div class="accordion-panel">
+                <p>A special keyword that represents a deliberate non-value, meaning "no value". Example: <br><code>let value = null;</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>O</span></h2>
+                
+                <button class="accordion">object</button>
+                <div class="accordion-panel">
+                <p>A collection of key-value pairs (properties and methods) used to store and manipulate data. Example: <br><code>let person = { name: 'Alice', age: 25 };</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>P</span></h2>
+                
+                <button class="accordion">Promise</button>
+                <div class="accordion-panel">
+                <p>An object representing the eventual completion (or failure) of an asynchronous operation and its resulting value. Example: <br><code>let promise = new Promise((resolve, reject) &rArr; { resolve('Success!'); });</code></p>
+                </div>
+                
+                <button class="accordion">Prototype</button>
+                <div class="accordion-panel">
+                <p>A mechanism by which JavaScript objects can inherit properties and methods from one another. Example: <br><code>function Person(name) { this.name = name; } Person.prototype.greet = function() { console.log('Hello, ' + this.name); };</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>R</span></h2>
+                
+                <button class="accordion">Recursion</button>
+                <div class="accordion-panel">
+                <p>A technique where a function calls itself directly or indirectly to solve a problem. Example: <br><code>function factorial(n) { if (n === 0) { return 1; } return n * factorial(n - 1); }</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>S</span></h2>
+                
+                <button class="accordion">Scope</button>
+                <div class="accordion-panel">
+                <p>The current context of code, which determines the visibility and accessibility of variables. Example: <br><code>let x = 10; function scopeTest() { let y = 20; console.log(x, y); }</code></p>
+                </div>
+                
+                <button class="accordion">String</button>
+                <div class="accordion-panel">
+                <p>A sequence of characters used to represent text. Example: <br><code>let greeting = 'Hello, World!';</code></p>
+                </div>
+                
+                <h2 class="glossary-letter"><span>T</span></h2>
+
+                <button class="accordion">This</button>
+                <div class="accordion-panel">
+                <p>A keyword that refers to the object it belongs to in the current code context. Example: <br><code>let person = { name: 'Alice', greet() { console.log('Hello, ' + this.name); } };</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>U</span></h2>
+                
+                <button class="accordion">Undefined</button>
+                <div class="accordion-panel">
+                <p>A variable that has been declared but not assigned a value. Example: <br><code>let x; console.log(x); // undefined</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>V</span></h2>
+                
+                <button class="accordion">Variable</button>
+                <div class="accordion-panel">
+                <p>A container for storing data that can be changed during program execution. Example: <br><code>let age = 25;</code></p>
+                </div>
+
+                <h2 class="glossary-letter"><span>X</span></h2>
+                
+                <button class="accordion">XMLHttpRequest</button>
+                <div class="accordion-panel">
+                <p>An API for transferring data between a web browser and a server, often used for AJAX requests. Example: <br><code>let xhr = new XMLHttpRequest(); xhr.open('GET', 'https://api.example.com/data'); xhr.send();</code></p>
+                </div>
+
             </div>
         </div>
     </section>
