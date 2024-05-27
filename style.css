@@ -272,10 +272,6 @@ footer{
     gap: 4rem;
 }
 
-footer h3:nth-child(3){
-    margin-left: auto;
-}
-
 .footer-about{
     display: flex;
     flex-direction: column;
@@ -294,6 +290,18 @@ footer h3:nth-child(3){
 
 .footer-about a:hover{
     color: var(--accent);
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+.footer-copyright img{
+    width: 20%;
 }
 
 /*********************************************
@@ -632,9 +640,6 @@ code{
 }
 
 .learning-menu{
-    position: sticky;
-    top: 1rem;
-    overflow: hidden scroll;
     padding-right: 2rem;
     border-right: 1px solid var(--dark-text);
 }
@@ -1110,7 +1115,7 @@ ol > li a:hover{
     margin-top: 5%;
     padding: 2% 8%;
     height: 250px;
-    background-image: url("img/footer-bg.png");
+    background-image: url("img/profile-header.png");
     border-bottom: 2px solid var(--text);
 }
 
@@ -1180,11 +1185,16 @@ ol > li a:hover{
 .dashboard h2{
     font-size: 1.4rem;
     font-weight: bold;
+    color: var(--background);
+}
+
+.dashboard p{
+    color: var(--background);
 }
 
 .panel{
     padding: 1rem;
-    background-color: var(--accent2);
+    background-color: var(--accent);
     border-radius: 0.4rem;
     border: 2px solid var(--accent);
 }
@@ -1193,8 +1203,13 @@ ol > li a:hover{
     display: flex;
 }
 
+.reminder-header:nth-child(2){
+    margin-left: auto;
+}
+
 .reminder-date{
     margin-left: auto;
+    color: var(--background);
 }
 
 .notifications{
@@ -1207,14 +1222,14 @@ ol > li a:hover{
 .notifications h2,
 .notification h3,
 .notifications p{
-    color: var(--text);
+    color: var(--background);
 }
 
 .notification{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: 2px solid var(--text);
+    border-bottom: 2px solid var(--background);
     gap: 1rem;
     padding: 1rem 0;
 }
@@ -1231,11 +1246,12 @@ ol > li a:hover{
 }
 
 .skills p{
-    background-color: var(--accent);
-    color: var(--background);
+    background-color: var(--accent2);
+    color: var(--text);
     padding: 0.4rem;
     border-radius: 0.4rem;
 }
+
 
 .acquired::after{
     font: var(--fa-font-solid);
@@ -1244,7 +1260,7 @@ ol > li a:hover{
 }
 
 .panel h2{
-    border-bottom: 2px solid var(--text);
+    border-bottom: 2px solid var(--background);
     padding-bottom: 1rem;
 }
 
@@ -1255,8 +1271,8 @@ ol > li a:hover{
 }
 
 .repository-list a{
-    color: var(--text);
-    border-bottom: 2px solid var(--text);
+    color: var(--background);
+    border-bottom: 2px solid var(--background);
     padding: 0.2rem 0;
 
 }
@@ -1264,7 +1280,7 @@ ol > li a:hover{
 .repository-header{
     display: flex;
     width: 100%;
-    border-bottom: 2px solid var(--text);
+    border-bottom: 2px solid var(--background);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
@@ -1363,8 +1379,9 @@ ol > li a:hover{
         display: block;
     }
 
-    .login-btn,
-    .signup-btn{
+    nav .big_nav .login-btn,
+    nav .big_nav .signup-btn
+    {
         display: none;
     }
 
@@ -1407,11 +1424,15 @@ ol > li a:hover{
         'basics'
         'java';
     }
+
+    .white-section h1{
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 900px){
     .black-section{
-        padding: 4% 8%;
+        padding: 8% 8%;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1448,7 +1469,7 @@ ol > li a:hover{
     }
 
     .take-off span{
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: var(--accent);
     }
     .dare-share-care{
@@ -1499,10 +1520,11 @@ ol > li a:hover{
         flex-direction: column;
         align-items: flex-start;
     }
-
-    footer h3:nth-child(3) {
+    .footer-copyright{
         margin-left: 0;
+        align-items: flex-start;
     }
+    
 }
 
 @media (max-width: 570px) {
