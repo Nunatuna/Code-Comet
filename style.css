@@ -1017,6 +1017,7 @@ ol > li a:hover{
 .live-preview{
     position: relative;
     z-index: -1;
+    height: 350px;
 }
 
 .live-preview img{
@@ -1054,8 +1055,9 @@ ol > li a:hover{
 }
 
 .community-posts{
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-auto-rows: 1fr;
     overflow-x: scroll;
     overflow-y: hidden;
     gap: 2rem;
