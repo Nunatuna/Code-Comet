@@ -1056,7 +1056,7 @@ ol > li a:hover{
 
 .community-posts{
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: 1fr;
     overflow-x: scroll;
     overflow-y: hidden;
